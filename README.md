@@ -67,11 +67,6 @@ if noise_rate > 0: model_name += f'_{int(noise_rate*100)}%'
 if dropout_rate > 0: model_name += f'_Dropout({dropout_rate})'
 if L2 > 0: model_name += f'_L2({L2})'
 if label_smoothing_rate > 0: model_name += f'_label_smoothing({label_smoothing_rate})'
-
-## Загрузка обученной модели:
-```python
-net = torch.load(f'models/{model_name}/{model_name}.pth', weights_only=False)
-net.eval()
 ```
 ### Загрузка обученной модели:
 ```python
