@@ -15,7 +15,7 @@
 
 2. **Полносвязные слои:**
    - Flatten()
-   - Linear(128*7*7, 512) + ReLU + Dropout
+   - Linear(6272, 512) + ReLU + Dropout
    - Linear(512, 128) + ReLU + Dropout
    - Linear(128, 10)
 
