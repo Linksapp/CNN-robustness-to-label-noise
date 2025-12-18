@@ -73,3 +73,8 @@ if label_smoothing_rate > 0: model_name += f'_label_smoothing({label_smoothing_r
 net = torch.load(f'models/{model_name}/{model_name}.pth', weights_only=False)
 net.eval()
 ```
+### Загрузка обученной модели:
+```python
+net = torch.load(f'models/{model_name}/{model_name}.pth', weights_only=False)
+net.eval()
+```
